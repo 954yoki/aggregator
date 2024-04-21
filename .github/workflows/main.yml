@@ -35,10 +35,10 @@ jobs:
         cd aggregate
         python -u subscribe/collect.py -s
 
-    - name: Merge Subscribe
-      id: merge
-      run: |
-        python3 -u subscribe/merge.py -f merged.yaml
+    # - name: Merge Subscribe
+    #   id: merge
+    #   run: |
+    #     python3 -u subscribe/merge.py -f merged.yaml
       
     - name: Create/Update Gist
       env:
